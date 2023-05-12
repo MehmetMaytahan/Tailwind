@@ -15,59 +15,69 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- Title -->
     <title>Tailwind</title>
 </head>
 
-<body class="font-openSans">
+<body class="font-openSans dark">
+
     <!-- HEADER SECTION -->
-    <header class="bg-black py-6 lg:py-12 text-gega-grey font-gemunu uppercase">
-        <!-- Header Conatiner -->
-        <div class="container flex items-center justify-between space-x-8 lg:space-x-16">
-            <!-- Logo -->
-            <a href="#"
-                class="pl-4 md:pl-0 text-4xl lg:text-6xl font-bold text-transparent bg-gradient-to-tr bg-clip-text from-gega-red to-gega-grey">GEGA</a>
-            <!-- Mobile Menu -->
-            <div class="block md:hidden pr-4">
-                <div class="space-y-1 cursor-pointer">
-                    <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
-                    <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
-                    <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
-                </div>
+    <header class="dark:bg-black bg-gega-white py-6 lg:py-12 dark:text-gega-grey font-gemunu uppercase ">
+
+        <!-- Dark Light Toogle -->
+        <div class="container">
+            <div class="cursor-pointer text-lg pl-4 lg:pl-0">
+                <i class="fa-solid fa-sun text-gega-white" id="sun"></i>
+                <i class="fa-solid fa-moon text-black hidden" id="moon"></i>
             </div>
-            <!-- Navigation -->
-            <nav class="hidden md:flex justify-between flex-1">
-                <!-- Menu -->
-                <div class="flex items-center lg:text-lg space-x-4 lg:space-x-8">
-                    <a href="#" class="hover:text-gega-melon transition duration-500">MOVIES</a>
-                    <a href="#" class="hover:text-gega-melon transition duration-500">CELEBRITIES</a>
-                    <a href="#" class="hover:text-gega-melon transition duration-500">BLOG</a>
-                    <a href="#" class="hover:text-gega-melon transition duration-500">NEWS</a>
-                    <a href="#" class="hover:text-gega-melon transition duration-500">ABOUT</a>
-                </div>
-                <!-- Login Area -->
-                <div class="flex items ceter space-x-4 lg:space-x-8">
-                    <!-- Search Area -->
-                    <form action="">
-                        <div class="group border-r px-4 mx-4 py-1 border-gega-red">
-                            <input type="text"
-                                class="opacity-0 group-hover:opacity-100 transition duration-500 bg-transparent border-b border-gega-red w-24 lg:w-44 outline-none ">
-                            <button class="-ml-3 group-hover:ml-0 transition duration-500">
-                                <i class="fas fa-search group-hover:text-gega-red duration-500"></i>
-                            </button>
-                        </div>
-                    </form>
-                    <!-- Signup Area -->
-                    <div class="flex items-center space-x-4 lg:space-x-8 lg:text-lg">
-                        <a href="#">Login</a>
-                        <a href="#"
-                            class="bg-gega-red px-3 py-1 hover:bg-rose-600 hover:text-gega-grey cursor-pointer transition duration-500 whitespace-nowrap">Sing
-                            Up</a>
+            <!-- Header Conatiner -->
+            <div class="container flex items-center justify-between space-x-8 lg:space-x-16">
+                <!-- Logo -->
+                <a href="#"
+                    class="pl-4 lg:pl-0 text-4xl lg:text-6xl font-bold text-transparent bg-gradient-to-tr bg-clip-text from-gega-red to-gega-grey">GEGA</a>
+                <!-- Mobile Menu -->
+                <div class="block md:hidden pr-4">
+                    <div class="space-y-1 cursor-pointer">
+                        <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
+                        <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
+                        <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
                     </div>
                 </div>
+                <!-- Navigation -->
+                <nav class="hidden md:flex justify-between flex-1">
+                    <!-- Menu -->
+                    <div class="flex items-center lg:text-lg space-x-4 lg:space-x-8">
+                        <a href="#" class="hover:text-gega-melon transition duration-500">MOVIES</a>
+                        <a href="#" class="hover:text-gega-melon transition duration-500">CELEBRITIES</a>
+                        <a href="#" class="hover:text-gega-melon transition duration-500">BLOG</a>
+                        <a href="#" class="hover:text-gega-melon transition duration-500">NEWS</a>
+                        <a href="#" class="hover:text-gega-melon transition duration-500">ABOUT</a>
+                    </div>
+                    <!-- Login Area -->
+                    <div class="flex items ceter space-x-4 lg:space-x-8 mr-4 lg:mr-0">
+                        <!-- Search Area -->
+                        <form action="">
+                            <div class="group border-r px-4 mx-4 py-1 border-gega-red">
+                                <input type="text"
+                                    class="opacity-0 group-hover:opacity-100 transition duration-500 bg-transparent border-b border-gega-red w-24 lg:w-40 outline-none ">
+                                <button class="-ml-3 group-hover:ml-0 transition duration-500">
+                                    <i class="fas fa-search group-hover:text-gega-red duration-500"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <!-- Signup Area -->
+                        <div class="flex items-center space-x-4 lg:space-x-8 lg:text-lg">
+                            <a href="#">Login</a>
+                            <a href="#"
+                                class="bg-gega-red px-3 py-1 hover:bg-rose-600 hover:text-gega-white text-gega-grey cursor-pointer transition duration-500 whitespace-nowrap">Sing
+                                Up</a>
+                        </div>
+                    </div>
 
-            </nav>
+                </nav>
+            </div>
         </div>
+
 
     </header>
 
@@ -132,7 +142,7 @@
     </section>
 
     <!-- MOVIES SECTION -->
-    <section class="py-24 bg-black">
+    <section class="py-24 dark:bg-black bg-gega-white dark:text-gega-grey text-black ">
         <!-- Movies Content -->
         <div class="container flex flex-col lg:flex-row lg:space-x-16 space-y-8 lg:space-y-0">
             <!--  Left Content -->
@@ -140,8 +150,8 @@
                 <!-- Titles -->
                 <div class="flex space-x-2 divide-x divide-gega-red divide-opacity-50 mb-8 pl-10 lg:pl-0">
                     <h2 class="text-gega-red"><a href="#">Latest</a></h2>
-                    <h2 class="text-gega-grey pl-2 hover:text-gega-red duration-500"><a href="#">Popular</a></h2>
-                    <h2 class="text-gega-grey pl-2 hover:text-gega-red duration-500"><a href="#">Best</a></h2>
+                    <h2 class="pl-2 hover:text-gega-red duration-500"><a href="#">Popular</a></h2>
+                    <h2 class="pl-2 hover:text-gega-red duration-500"><a href="#">Best</a></h2>
                 </div>
                 <!-- Images Container -->
                 <div class="flex flex-wrap">
@@ -318,7 +328,7 @@
             <!-- Right Content -->
             <div class="basis-1/3 pl-10 lg:pl-0">
                 <!-- Title -->
-                <h2 class="text-gega-grey mb-8">Hot News</h2>
+                <h2 class="mb-8">Hot News</h2>
                 <!--  News Container -->
                 <div
                     class="flex flex-row lg:flex-col lg:h-full lg:pb-16 justify-start lg:justify-between flex-wrap lg:flex-nowrap space-y-4">
@@ -330,7 +340,7 @@
                         </div>
                         <!-- Item Detail -->
                         <div
-                            class="basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500">
+                            class="basis-2/3 dark:group-hover:text-gega-melon group-hover:text-gega-red group-hover:cursor-pointer duration-500">
                             <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum,
                                 minima.</p>
                             <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">ON NOW 04 2023</p>
@@ -344,7 +354,7 @@
                         </div>
                         <!-- Item Detail -->
                         <div
-                            class="basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500">
+                            class="basis-2/3 dark:group-hover:text-gega-melon group-hover:text-gega-red group-hover:cursor-pointer duration-500">
                             <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum,
                                 minima.</p>
                             <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">ON NOW 04 2023</p>
@@ -358,7 +368,7 @@
                         </div>
                         <!-- Item Detail -->
                         <div
-                            class="basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500">
+                            class="basis-2/3 dark:group-hover:text-gega-melon group-hover:text-gega-red group-hover:cursor-pointer duration-500">
                             <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum,
                                 minima.</p>
                             <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">ON NOW 04 2023</p>
@@ -372,7 +382,7 @@
                         </div>
                         <!-- Item Detail -->
                         <div
-                            class="basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500">
+                            class="basis-2/3 dark:group-hover:text-gega-melon group-hover:text-gega-red group-hover:cursor-pointer duration-500">
                             <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum,
                                 minima.</p>
                             <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">ON NOW 04 2023</p>
@@ -386,7 +396,7 @@
                         </div>
                         <!-- Item Detail -->
                         <div
-                            class="basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500">
+                            class="basis-2/3 dark:group-hover:text-gega-melon group-hover:text-gega-red group-hover:cursor-pointer duration-500">
                             <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum,
                                 minima.</p>
                             <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">ON NOW 04 2023</p>
@@ -399,7 +409,7 @@
     </section>
 
     <!-- MATRIX SECTION -->
-    <section class="bg-gega-white">
+    <section class="dark:bg-gega-white bg-gega-white">
         <!-- Matric Section Container -->
         <div class="container flex items-center justfiy-center relative pl-10 md:pl-0">
             <!-- Left Content -->
@@ -410,7 +420,7 @@
             <div class="md:basis-2/3 lg:basis-1/2 w-3/4 md:w-full">
                 <!-- Right Content Container -->
                 <div class="flex flex-col justify-center py-10 ">
-                    <h3 class="tracking-wider text-gega-melon">Action,Drama,Thriller</h3>
+                    <h3 class="tracking-wider dark:text-gega-melon text-gega-red">Action,Drama,Thriller</h3>
                     <h2 class="mb-2">
                         Matrix Reloaded
                     </h2>
@@ -433,18 +443,18 @@
 
     </section>
 
-    <!-- POPULAR POSTS -->
-    <section class="bg-black py-24 text-gega-grey">
+    <!-- POPULAR POSTS SECTION -->
+    <section class="dark:bg-black bg-gega-white py-24 dark:text-gega-grey text-black">
         <!-- Container -->
         <div class="container px-10 lg:px-0">
             <!-- Title -->
-            <h2 class="text-gega-red"><a href="#">Popular Posts</a></h2>
+            <h2 class="text-gega-red mb-8"><a href="#">Popular Posts</a></h2>
             <!-- Grid Area -->
             <div class="grid grid-cols-6 gap-10">
                 <!-- Item 1 -->
-                <div class="col-span-6 md:col-span-3 border border-gega-red">
+                <div class="col-span-6 md:col-span-3 border dark:border-gega-red border-black">
                     <!-- Item 1 Header -->
-                    <div class="border-b border-gega-red p-4 flex items-center justify-between">
+                    <div class="border-b dark:border-gega-red border-black p-4 flex items-center justify-between">
                         <h3>
                             Accusantium Doloremque Laudant...
                         </h3>
@@ -457,7 +467,8 @@
                         inventore, velit id maiores sapiente hic quaerat!
                     </div>
                     <!-- Iem 1 Footer -->
-                    <div class="flex justify-end border-t border-gega-red p-4 space-x-4 font-bold font-gemunu text-xs">
+                    <div
+                        class="flex justify-end border-t dark:border-gega-red border-black p-4 space-x-4 font-bold font-gemunu text-xs">
                         <p>ON DEC 17, 2022</p>
                         <div class="flex items-center justify-center space-x-1">
                             <i class="fa-regular fa-comment"></i>
@@ -468,9 +479,9 @@
                     </div>
                 </div>
                 <!-- Item 2 -->
-                <div class="col-span-6 md:col-span-3 border border-gega-red">
+                <div class="col-span-6 md:col-span-3 border dark:border-gega-red border-black">
                     <!-- Item 2 Header -->
-                    <div class="border-b border-gega-red p-4 flex items-center justify-between">
+                    <div class="border-b dark:border-gega-red border-black p-4 flex items-center justify-between">
                         <h3>
                             Accusantium Doloremque Laudant...
                         </h3>
@@ -483,7 +494,8 @@
                         inventore, velit id maiores sapiente hic quaerat!
                     </div>
                     <!-- Item 2 Footer -->
-                    <div class="flex justify-end border-t border-gega-red p-4 space-x-4 font-bold font-gemunu text-xs">
+                    <div
+                        class="flex justify-end border-t dark:border-gega-red border-black p-4 space-x-4 font-bold font-gemunu text-xs">
                         <p>ON DEC 17, 2022</p>
                         <div class="flex items-center justify-center space-x-1">
                             <i class="fa-regular fa-comment"></i>
@@ -494,9 +506,9 @@
                     </div>
                 </div>
                 <!-- Item 3 -->
-                <div class="col-span-6 md:col-span-3 lg:col-span-2 border border-gega-red">
+                <div class="col-span-6 md:col-span-3 lg:col-span-2 border dark:border-gega-red border-black">
                     <!-- Item 3 Header -->
-                    <div class="border-b border-gega-red p-4 flex items-center justify-between">
+                    <div class="border-b dark:border-gega-red border-black p-4 flex items-center justify-between">
                         <h3>
                             Accusantium Doloremque Laudant...
                         </h3>
@@ -509,7 +521,8 @@
                         inventore, velit id maiores sapiente hic quaerat!
                     </div>
                     <!-- Item 3 Footer -->
-                    <div class="flex justify-end border-t border-gega-red p-4 space-x-4 font-bold font-gemunu text-xs">
+                    <div
+                        class="flex justify-end border-t dark:border-gega-red border-black p-4 space-x-4 font-bold font-gemunu text-xs">
                         <p>ON DEC 17, 2022</p>
                         <div class="flex items-center justify-center space-x-1">
                             <i class="fa-regular fa-comment"></i>
@@ -520,9 +533,9 @@
                     </div>
                 </div>
                 <!-- Item 4 -->
-                <div class="col-span-6 md:col-span-3 lg:col-span-2 border border-gega-red">
+                <div class="col-span-6 md:col-span-3 lg:col-span-2 border dark:border-gega-red border-black">
                     <!-- Item 4 Header -->
-                    <div class="border-b border-gega-red p-4 flex items-center justify-between">
+                    <div class="border-b dark:border-gega-red border-black p-4 flex items-center justify-between">
                         <h3>
                             Accusantium Doloremque Laudant...
                         </h3>
@@ -535,7 +548,8 @@
                         inventore, velit id maiores sapiente hic quaerat!
                     </div>
                     <!-- Item 4 Footer -->
-                    <div class="flex justify-end border-t border-gega-red p-4 space-x-4 font-bold font-gemunu text-xs">
+                    <div
+                        class="flex justify-end border-t dark:border-gega-red border-black p-4 space-x-4 font-bold font-gemunu text-xs">
                         <p>ON DEC 17, 2022</p>
                         <div class="flex items-center justify-center space-x-1">
                             <i class="fa-regular fa-comment"></i>
@@ -546,9 +560,10 @@
                     </div>
                 </div>
                 <!-- Item 5 -->
-                <div class="col-span-6 md:hidden lg:block mdcol-span-3 lg:col-span-2 border border-gega-red">
+                <div
+                    class="col-span-6 md:hidden lg:block mdcol-span-3 lg:col-span-2 border dark:border-gega-red border-black">
                     <!-- Item 5 Header -->
-                    <div class="border-b border-gega-red p-4 flex items-center justify-between">
+                    <div class="border-b dark:border-gega-red border-black p-4 flex items-center justify-between">
                         <h3>
                             Accusantium Doloremque Laudant...
                         </h3>
@@ -561,7 +576,8 @@
                         inventore, velit id maiores sapiente hic quaerat!
                     </div>
                     <!-- Item 5 Footer -->
-                    <div class="flex justify-end border-t border-gega-red p-4 space-x-4 font-bold font-gemunu text-xs">
+                    <div
+                        class="flex justify-end border-t dark:border-gega-red border-black p-4 space-x-4 font-bold font-gemunu text-xs">
                         <p>ON DEC 17, 2022</p>
                         <div class="flex items-center justify-center space-x-1">
                             <i class="fa-regular fa-comment"></i>
@@ -575,6 +591,50 @@
         </div>
     </section>
 
+    <!-- FOOTER SECTION -->
+    <footer class="dark:bg-black bg-gega-white dark:text-gega-grey text-black">
+        <!-- Footer Container -->
+        <div class="container flex flex-col md:flex-row px-10 lg:px-0  pb-8">
+            <!-- Left Content -->
+            <div class="basis-1/3">
+                <!-- Logo -->
+                <a href="#"
+                    class="text-2xl lg:text-3xl font-bold text-transparent bg-gradient-to-tr bg-clip-text from-gega-red to-gega-grey">GEGA
+                </a>
+                <p class="mt-2">2023 Mehmet Maytahan NO &copy; COPYRIGHT</p>
+            </div>
+
+            <!-- Middle Content -->
+            <div class="basis-1/3">
+                <h2 class="mb-2 text-gega-red">
+                    Links
+                </h2>
+                <div class="grid grid-cols-5 gap-2 uppercase">
+                    <a href="#"
+                        class="col-span-2 dark:hover:text-gega-melon hover:text-gega-red duration-500">Movies</a>
+                    <a href="#"
+                        class="col-span-2 dark:hover:text-gega-melon hover:text-gega-red duration-500">Celebrities</a>
+                    <a href="#" class="col-span-2 dark:hover:text-gega-melon hover:text-gega-red duration-500">Blog</a>
+                    <a href="#" class="col-span-2 dark:hover:text-gega-melon hover:text-gega-red duration-500">News</a>
+                    <a href="#" class="col-span-2 dark:hover:text-gega-melon hover:text-gega-red duration-500">About</a>
+                </div>
+            </div>
+            <!-- Right Content -->
+            <div class="basis-1/3">
+                <h2 class="text-gega-red mb-2">Follow Us</h2>
+                <form action="" class="flex">
+                    <input type="text" placeholder="TYPE YOUR EMAIL"
+                        class="py-1 px-2 bg-transparent border border-gega-red placeholder:text-xs outline-none">
+                    <button
+                        class="py-1 px-2 border border-gega-red bg-gega-red text-white font-gemunu uppercase">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+    </footer>
+
 </body>
+<!-- Scripts -->
+<script src="./js/script.js"></script>
 
 </html>
